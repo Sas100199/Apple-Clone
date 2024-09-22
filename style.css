@@ -1,0 +1,229 @@
+*{
+    color: rgb(3, 3, 3);
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+*::selection{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body:hover{
+    pointer-events: all;
+}
+html,body{
+    height: 100%;
+    width:  100%;
+}
+body{
+    /* overflow: hidden; */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#hero{
+    height: 100%;
+    width:  100%;
+}
+nav{
+    color: black;
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* background-color: white ; */
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+
+  #links  i{
+    align-items: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+#links{
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+#links a{
+    padding: 0px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#landing{
+    background: url(landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: center;
+    height: 100% ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 30px;
+    flex-direction: column;
+    /* height: auto; */
+    text-align: center;
+}
+#landing h1{
+    position: absolute;
+    top: 10%;
+    right: 45%;
+}
+#landing-h1{
+    position: absolute;
+    scale: 0.8;
+    top: -5%;
+}
+#landing #landing-img{
+    display: flex;
+    z-index: -1;
+    height: 100%;
+    scale: 1.2;
+    /* position: static; */
+   /* filter: drop-shadow(15px 15px 40px #D29E79 ); */
+}
+#landing-button{
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    bottom: 20%;
+}
+ #button-left button,#button-right > button{
+ 
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    background-color: #0071E3;
+}
+#button-right > button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border:2px solid #0071E3;
+}
+#button-right > button:hover{
+    background-color: #0071E3;
+}
+#landing-small-head{
+   
+    position:absolute;
+    bottom: 15%;    
+    right: 50%;
+}
+#first{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: url(blue-iphone.jpg),linear-gradient(#141C5A ,#BDCAEC);
+    background-repeat: no-repeat;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+#first h1{
+    position: absolute;
+    top: 1%;
+    background: -webkit-linear-gradient(#BDCAEC,#141C5A );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+#second{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    /* background: url("apple-watch-15.jpg"); */
+    background-repeat: no-repeat;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background:rgba(255, 255, 255, 0.8);
+    /* overflow-x: hidden; */
+    gap: 30px;
+}
+#second-1{
+    position: absolute;
+    top: 15%;
+    /* object-fit: cover; */
+    height: auto;
+    width: auto;
+}
+
+#second #second-2{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#second #landing-button{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    /* background-color: #0071E3; */
+}
+#second #button-right{
+  border-radius: 20px;
+    background-color: #0071E3;
+}
+#third{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center;     */
+}
+#third-img{
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 70px;
+    flex-wrap: wrap;
+    display: flex;
+    height:100%;
+    width: 100%;
+}
+.third-img-class{
+    height: 50%;
+    width: 50%;
+}
+#third-img-1 img {
+  /* object-fit: cover;  */
+  background: url("promo-watch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+    width: 50%;
+    height: 50%;
+}
+#third-img-2 img {
+    /* object-fit:  cover; */
+    width: 50%;
+    height: 50%;
+}
+#third-img-3 img {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+}
+#third-img-4 img {
+    object-fit: cover;  
+    width: 50%;
+    height: 50%;
+}
